@@ -1,0 +1,20 @@
+// IMPORTANT: LEAVE THESE PARTS ALONE. They show how big an 8x11 piece of paper is.
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #ebebeb;
+}
+
+#page {
+  background-color: #fff;
+  width: 684px;
+  height: 956px;
+  margin: 10px auto 20px;
+  padding: 36px 36px;
+}
+
