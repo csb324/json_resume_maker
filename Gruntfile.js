@@ -18,6 +18,11 @@ module.exports = function(grunt) {
         tasks: ['copy:html']
       },
 
+      data: {
+        files: ['src/data/**/*.js'],
+        tasks: ['copy:data']
+      },
+
       page: {
         files: ['dest/**/*'],
         options: {

@@ -1,5 +1,8 @@
 	var resume = {
 		name: "Janet Doe",
+	  email: "foo@bar.com",
+	  phone: "703 555 5555",
+
 		description:"A person with a job history",
 		jobs: [
 			{

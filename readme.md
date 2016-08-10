@@ -20,15 +20,17 @@ First, run:
 `npm init`
 
 Then run:
-`grunt`
+```
+grunt
+```
 
-Then, open your browser to localhost:8000. I'm using the livereload browser extension to deal with that, but if your'e not, there's a little script tag you can include at the bottom of the html instead.
+Then, open your browser to localhost:8000/dest. I'm using the livereload browser extension to deal with that, but if your'e not, there's a little script tag you can include at the bottom of the html instead.
 
 Then, edit the files in the src/ directory! Put in your information, edit the template, do whatever you want. 
 
 *Note:* The grey box shows how big an 8.5x11 inch piece of paper is. If you overflow that box, you're gonna have a bad time. 
 
-If you're done and the resume looks the way you want it to, go into your browser and hit "Print". Then, fiddle with the options as you see fit and select "Save to PDF". Now you have a PDF of your resume! This also preserves any hyperlinks, if you're into that kind of thing.
+If you're done and the resume looks the way you want it to, go into your browser and hit "Print". Then, fiddle with the options as you see fit (pro tip: select *Margins: None* on chrome) and select "Save to PDF". Now you have a PDF of your resume! This also preserves any hyperlinks, if you're into that kind of thing.
 
 ### That's it!
 
