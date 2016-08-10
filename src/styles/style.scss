@@ -1,0 +1,147 @@
+$primary-color: #919191;
+$accent-color: #AA2A51;
+$gray: #919191;
+
+// $families: "Unica+One", "Vollkorn:400,400italic";
+$families: "Lora:400,400italic", "Roboto+Condensed:400,300", "Montserrat:400,700";
+
+@each $family in $families {
+  $clean: unquote(#{$family});
+  @import url("//fonts.googleapis.com/css?family=#{$clean}");
+}
+
+$body-font: "Lora", serif;
+// $header-font: "Vollkorn", "Helvetica Neue", "Helvetica", sans-serif;
+
+$header-font: "Roboto Condensed",  "Helvetica Neue", "Helvetica", sans-serif;
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  background-color: #ebebeb;
+  font-family: $body-font;
+  font-size: 12px;
+}
+
+* {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+h1, h2 {
+  font-family: $header-font;
+}
+
+a {
+  color: $accent-color;
+  text-decoration: none;
+  font-family: $header-font;
+
+}
+
+#page {
+  background-color: #fff;
+  width: 684px;
+  height: 956px;
+  // overflow: hidden;
+  margin: 10px auto;
+  padding: 36px 36px;
+}
+
+
+.section-heading {
+  margin: 5px 0;
+  // text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $accent-color;
+  border: 1px solid lighten($accent-color, 40%);
+  border-width: 0 0 1px 0;
+  font-weight: 300;
+  // letter-spacing: 3px;
+}
+
+h2 {
+  font-size: 19px;
+}
+
+.details {
+  color: $gray;
+  font-size: 13px;
+  // font-family: $body-font;
+  // font-style: italic;
+}
+.date-range {
+  color: $primary-color;
+}
+
+.entry {
+  margin-bottom: 15px;
+}
+.clearfix {
+  clear: both;
+}
+
+#education, #about {
+  display: inline-block;
+  width: 50%;
+  margin-right: -2px;
+  float: left;
+  margin-bottom: -20px;
+  .section-heading {
+    margin-top: 0;
+  }
+}
+#about {
+  h1 {
+    font-size: 30px;
+    color: $accent-color;
+  }
+  p {
+    font-size: 15px;
+  }
+  .about {
+    margin-top: 10px;
+  }
+  .contact, .about {
+    font-family: $header-font;
+  }
+  .contact {
+    font-weight: 300;
+  }
+  padding-right: 15px;
+}
+.title {
+  position: relative;
+}
+.link {
+  // font-family: $header-font;
+  color: $primary-color;
+  position: absolute;
+  right: 0;
+  bottom: 1px;
+}
+
+#skills, #interests {
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  li {
+    display: inline-block;
+    // color: $primary-color;
+    // border: 1px solid #ccc;
+    font-size: 14px;
+    padding: 2px 3px;
+    border-radius: 4px;
+    font-family: $header-font;
+    margin-bottom: 2px;
+  }
+}

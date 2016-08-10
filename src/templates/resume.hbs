@@ -1,0 +1,53 @@
+<div id="about">
+  <h1>{{ name }}</h1>
+  <p class="contact">Email: csb324@gmail.com</p>
+  <p class="contact">Phone: 703 473 3719</p>
+  <p class="about">{{ description }}</p>
+</div>
+
+<div id="education">
+  <h1 class="section-heading">Education</h1>
+  {{#each education }}
+    <div class="education entry">
+      <p class="date-range">{{startDate}} - {{ endDate }}</p>
+      <h2>{{ school }} <span class="details">{{ location }}</span></h2>
+      <p>{{ course }} </p>
+    </div>
+  {{/each}}
+</div>
+<div class="clearfix"></div>
+
+<div id="jobs">
+  <h1 class="section-heading">Experience</h1>
+  {{#each jobs }}
+    <div class="job entry">
+      <p class="date-range">{{startDate}} - {{ endDate }}</p>
+      <h2>{{ title }} <span class="details">{{ company }}</span></h2>
+      <p class="description">{{ description }}</p>
+    </div>
+  {{/each}}
+</div>
+
+<div id="projects">
+  <h1 class="section-heading">Projects</h1>
+  {{#each projects }}
+    <div class="project entry">
+      <p class="date-range">{{ startDate }}</p>
+      <div class="title">
+        <h2>{{ title }} <span class="details">{{ role }}</span></h2>
+        <span class="link"><a href="http://{{link}}">{{ link }}</a></span>
+      </div>
+      <p class="description">{{ description }}</p>
+    </div>
+  {{/each}}
+</div>
+
+<div id="skills">
+  <h1 class="section-heading">Skills</h1>
+  <ul>
+    {{#each skills}}
+    <li>{{this}}</li>
+    {{/each}}
+  </ul>
+</div>
+
