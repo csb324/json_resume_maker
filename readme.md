@@ -12,12 +12,16 @@ So this little handy tool lets you input your work history -- plus education, pr
 
 Of course, it's only useful if you prefer javascript, handlebars, and CSS to a word processor. If you're sitting here like, "great! what's handlebars?" this might not be the tool for you. (If I tell you "It's a javascript-based templating system" and you say, "Oh, yes, one of those, I know what those are like," then you can stick around.)
 
+Basically, if you've ever thought, 'I wish I could use web technologies to create a paper document', read on.
+
 ### How do I use it?
 
 This project uses Grunt and Sass and Handlebars.
 
 First, run:
-`npm init`
+```
+npm install
+```
 
 Then run:
 ```
@@ -32,8 +36,18 @@ Then, edit the files in the src/ directory! Put in your information, edit the te
 
 If you're done and the resume looks the way you want it to, go into your browser and hit "Print". Then, fiddle with the options as you see fit (pro tip: select *Margins: None* on chrome) and select "Save to PDF". Now you have a PDF of your resume! This also preserves any hyperlinks, if you're into that kind of thing.
 
-### That's it!
+Congratulations! You now have a cool new resume!
 
-I made this for myself and decided to put it up here as a bit of an afterthought, so feel free to contribute, or just tell me I'm bad at my hobbies, because that's cool too and a great way to make friends.
-(Seriously though, if you have a problem using this, I will try to help fix it!)
+<hr>
 
+### Q: Can I help?
+
+Please do! I made this for myself and decided to put it up here as a bit of an afterthought, so feel free to contribute, or just tell me I'm bad at my hobbies, because that's cool too and a great way to make friends.
+
+### Q: Why doesn't it work?
+
+See above -- I haven't done much (read: any) testing on this outside of my personal use of it. #dogfood. So if you have an issue, let me know!
+
+### Q: Is it responsive?
+
+A: No. It is for one screen, and that screen is a simulation of an 8.5x11 inch piece of paper. If you want to make a resume for web-viewing, you're barking up the wrong tree.
