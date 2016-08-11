@@ -1,18 +1,22 @@
 @import "page";
 
 $primary-color: #919191;
-$accent-color: #AA2A51;
+$accent-color: #39558C;
+$light-color: #FFBCDD;
 $gray: #919191;
-$families: "Lora:400,400italic", "Roboto+Condensed:400,300", "Montserrat:400,700";
+// $families: "Lora:400,400italic", "Roboto+Condensed:400,300", "Montserrat:400,700";
 
-@each $family in $families {
-  $clean: unquote(#{$family});
-  @import url("//fonts.googleapis.com/css?family=#{$clean}");
-}
+// @each $family in $families {
+//   $clean: unquote(#{$family});
+//   @import url("//fonts.googleapis.com/css?family=#{$clean}");
+// }
 
-$body-font: "Lora", serif;
-$header-font: "Roboto Condensed",  "Helvetica Neue", "Helvetica", sans-serif;
+@import 'https://fonts.googleapis.com/css?family=Fira+Mono|Open+Sans:400,400i,600,600i|Playfair+Display';
 
+$body-font: "Open Sans", "Helvetica Neue", sans-serif;
+// $header-font: "Playfair Display", "Georgia", serif;
+$header-font: $body-font;
+$accent-font: "Fira Mono", monospace;
 
 body {
   font-family: $body-font;
@@ -35,14 +39,18 @@ a {
 
 
 .section-heading {
-  margin: 5px 0;
   // text-align: center;
   font-size: 16px;
-  text-transform: uppercase;
+  font-family: $accent-font;
+  text-transform: lowercase;
   color: $accent-color;
-  border: 1px solid lighten($accent-color, 40%);
+  border: 1px solid $light-color;
   border-width: 0 0 1px 0;
   font-weight: 300;
+  
+  line-height: 1.2;
+  margin: 15px 0 5px;
+
   // letter-spacing: 3px;
 }
 
@@ -82,18 +90,20 @@ h2 {
   h1 {
     font-size: 30px;
     color: $accent-color;
+    font-family: $accent-font;
   }
   p {
-    font-size: 15px;
+    font-size: 13px;
   }
   .about {
     margin-top: 10px;
   }
   .contact, .about {
-    font-family: $header-font;
+    // font-family: $accent-font;
   }
   .contact {
     font-weight: 300;
+    font-family: $accent-font;
   }
   padding-right: 15px;
 }
